@@ -33,4 +33,14 @@ Import this repository in Vercel and keep the detected Next.js defaults. No envi
 
 GitHub Actions validates every push and pull request. After the repository is imported into Vercel, Vercel automatically creates preview deployments for pull requests and deploys successful changes from `main` to production.
 
+## Redeploy
+
+Run the deployment helper from a clean `main` branch:
+
+```bash
+npm run deploy
+```
+
+The script validates TypeScript, creates a production build, adds a deployment-trigger commit, and pushes `main`. GitHub Actions and Vercel then run automatically. Regular committed changes pushed to `main` deploy through the same pipeline without running this helper.
+
 The resume content is stored at `public/Supakorn-Udomsintuwat-Resume.pdf`, while portfolio content can be updated centrally in `data/profile.ts`.
