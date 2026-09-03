@@ -29,7 +29,7 @@ export default function Home() {
           <div className="section-heading"><div><span className="kicker">01 / Selected work</span><h2>Proof, not<br /><em>just promises.</em></h2></div><p>Production systems where I owned meaningful technical decisions and delivered measurable outcomes.</p></div>
         </Reveal>
         <div className="project-grid">
-          {profile.projects.map((project, index) => <Reveal key={project.number} className={index === 1 ? "project-offset" : ""}><ProjectCard project={project} /></Reveal>)}
+          {profile.projects.map((project, index) => <Reveal key={project.number} className={index % 2 === 1 ? "project-offset" : ""}><ProjectCard project={project} /></Reveal>)}
         </div>
       </section>
 

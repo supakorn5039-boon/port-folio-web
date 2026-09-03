@@ -7,6 +7,8 @@ export type Project = {
   technologies: string;
   color: string;
   href?: string;
+  linkLabel?: string;
+  status?: string;
 };
 
 export const profile = {
@@ -87,6 +89,7 @@ export const profile = {
       metric: "100M+ records · 1–2M events/day",
       technologies: "Laravel · React · TimescaleDB · Redis · Kubernetes",
       color: "coral",
+      status: "Confidential production system",
     },
     {
       number: "02",
@@ -98,6 +101,7 @@ export const profile = {
       technologies: "Go · Gin · React 19 · PostgreSQL · AWS · R2",
       color: "lime",
       href: "https://wealthyprimeestate.com",
+      linkLabel: "Visit live platform",
     },
     {
       number: "03",
@@ -108,6 +112,19 @@ export const profile = {
       metric: "Over 10× faster search",
       technologies: "PostgreSQL · TimescaleDB · Query planning",
       color: "blue",
+      status: "Production performance case",
+    },
+    {
+      number: "04",
+      title: "SaaS Task Management",
+      type: "Open-source architecture build",
+      summary:
+        "A multi-user Go and React application built around production patterns: reversible migrations, typed errors, optimistic UI, RBAC, health checks, graceful shutdown, and full-stack CI.",
+      metric: "Real PostgreSQL tests · full-stack CI",
+      technologies: "Go · React 19 · TypeScript · PostgreSQL · Docker",
+      color: "violet",
+      href: "https://github.com/supakorn5039-boon/saas-task-management",
+      linkLabel: "Explore source",
     },
   ] as Project[],
   education: {

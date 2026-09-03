@@ -13,12 +13,15 @@ export function ProjectCard({ project }: { project: Project }) {
         <small>{project.technologies}</small>
       </div>
       {project.href ? (
-        <span className="project-arrow" aria-hidden="true"><IconArrowUpRight size={24} stroke={1.5} /></span>
+        <span className="project-cta" aria-hidden="true">
+          <span>{project.linkLabel ?? "View project"}</span>
+          <i><IconArrowUpRight size={22} stroke={1.5} /></i>
+        </span>
       ) : (
-        <span className="project-status">Selected case study</span>
+        <span className="project-status">{project.status ?? "Selected case study"}</span>
       )}
     </article>
   );
 
-  return project.href ? <a className="project-card-link" href={project.href} target="_blank" rel="noreferrer" aria-label={`Visit ${project.title} (opens in a new tab)`}>{content}</a> : content;
+  return project.href ? <a className="project-card-link" href={project.href} target="_blank" rel="noopener noreferrer" aria-label={`${project.linkLabel ?? "View project"}: ${project.title} (opens in a new tab)`}>{content}</a> : content;
 }
