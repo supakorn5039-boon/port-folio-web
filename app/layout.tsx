@@ -5,15 +5,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Supakorn Udomsintuwat — Full Stack Software Engineer",
-  description: "Full Stack Software Engineer building high-volume data platforms and production web applications with React, TypeScript, Go, Laravel, and PostgreSQL.",
+  title: "Supakorn Udomsintuwat — Full Stack Engineer",
+  description: "Full Stack Engineer building high-volume data platforms and production web applications with React, TypeScript, Go, Laravel, and PostgreSQL.",
   keywords: ["Supakorn Udomsintuwat", "Full Stack Engineer", "React", "TypeScript", "Go", "Laravel", "PostgreSQL", "Thailand"],
   authors: [{ name: "Supakorn Udomsintuwat" }],
   creator: "Supakorn Udomsintuwat",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Supakorn Udomsintuwat — Full Stack Software Engineer",
+    title: "Supakorn Udomsintuwat — Full Stack Engineer",
     description: "Architecture to production. Reliable software, measurable outcomes.",
     type: "website",
     url: "/",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Supakorn Udomsintuwat — Full Stack Software Engineer",
+    title: "Supakorn Udomsintuwat — Full Stack Engineer",
     description: "Architecture to production. Reliable software, measurable outcomes.",
   },
   formatDetection: {
@@ -43,7 +43,7 @@ const personStructuredData = {
     addressLocality: "Chiang Mai",
     addressCountry: "TH",
   },
-  sameAs: [profile.socials.github],
+  sameAs: [profile.socials.github, profile.socials.linkedin],
   knowsAbout: profile.skillGroups.flatMap((group) => group.items.split(", ")),
 };
 

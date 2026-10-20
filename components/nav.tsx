@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import {
   IconArrowUpRight,
   IconBrandGithub,
+  IconBrandLinkedin,
   IconDownload,
   IconMenu2,
   IconX,
@@ -81,6 +82,9 @@ export function Nav() {
           </a>
           <a href={profile.socials.github} target="_blank" rel="noreferrer">
             <IconBrandGithub size={18} /> GitHub
+          </a>
+          <a href={profile.socials.linkedin} target="_blank" rel="noreferrer">
+            <IconBrandLinkedin size={18} /> LinkedIn
           </a>
         </div>
       </div>

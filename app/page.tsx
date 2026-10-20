@@ -1,4 +1,4 @@
-import { IconArrowDown, IconArrowUpRight, IconBrandGithub, IconDownload } from "@tabler/icons-react";
+import { IconArrowDown, IconArrowUpRight, IconBrandGithub, IconBrandLinkedin, IconDownload } from "@tabler/icons-react";
 import { Nav } from "@/components/nav";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
@@ -57,7 +57,7 @@ export default function Home() {
 
       <footer id="contact">
         <div className="shell footer-inner">
-          <Reveal><span className="kicker light">Looking for an engineer who takes ownership?</span><h2>Let&apos;s build<br /><em>what matters.</em></h2><div className="footer-actions"><a className="email-button" href={`mailto:${profile.email}`}>{profile.email}<IconArrowUpRight size={22} /></a><a className="download-button" href={profile.resume} download><IconDownload size={19} /> Download CV</a><a className="download-button" href={profile.socials.github} target="_blank" rel="noreferrer"><IconBrandGithub size={19} /> GitHub</a></div></Reveal>
+          <Reveal><span className="kicker light">Looking for an engineer who takes ownership?</span><h2>Let&apos;s build<br /><em>what matters.</em></h2><div className="footer-actions"><a className="email-button" href={`mailto:${profile.email}`}>{profile.email}<IconArrowUpRight size={22} /></a><a className="download-button" href={profile.resume} download><IconDownload size={19} /> Download CV</a><a className="download-button" href={profile.socials.github} target="_blank" rel="noreferrer"><IconBrandGithub size={19} /> GitHub</a><a className="download-button" href={profile.socials.linkedin} target="_blank" rel="noreferrer"><IconBrandLinkedin size={19} /> LinkedIn</a></div></Reveal>
           <div className="footer-bottom"><span>© {new Date().getFullYear()} {profile.name}</span><a href={`tel:${profile.phone}`}>{profile.phoneDisplay}</a><a href="#top">Back to top ↑</a></div>
         </div>
       </footer>

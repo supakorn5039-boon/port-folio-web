@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/supakorn5039-boon/port-folio-web/actions/workflows/ci.yml/badge.svg)](https://github.com/supakorn5039-boon/port-folio-web/actions/workflows/ci.yml)
 
-Personal portfolio for Supakorn Udomsintuwat, a Full Stack Software Engineer based in Chiang Mai, Thailand. The site highlights production-scale engineering work across React, TypeScript, Go, Laravel, PostgreSQL, TimescaleDB, and cloud infrastructure.
+Personal portfolio for Supakorn Udomsintuwat, a Full Stack Engineer based in Chiang Mai, Thailand. The site highlights production-scale engineering work across React, TypeScript, Go, Laravel, PostgreSQL, TimescaleDB, and cloud infrastructure.
 
 ## Built with
 

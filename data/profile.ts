@@ -14,7 +14,7 @@ export type Project = {
 export const profile = {
   name: "Supakorn Udomsintuwat",
   initials: "SU",
-  role: "Full Stack Software Engineer",
+  role: "Full Stack Engineer",
   location: "Chiang Mai, Thailand",
   email: "supakornboon5039@gmail.com",
   phone: "+66808656423",
@@ -27,6 +27,7 @@ export const profile = {
   availability: "Full Stack Engineer · Chiang Mai, Thailand",
   socials: {
     github: "https://github.com/supakorn5039-boon",
+    linkedin: "https://www.linkedin.com/in/supakorn-udomsintuwat/",
   },
   highlights: [
     { value: "100M+", label: "production records" },
@@ -43,7 +44,7 @@ export const profile = {
     {
       number: "02",
       title: "Backend & Data",
-      items: "Go, Gin, Laravel, GORM, REST APIs, PostgreSQL, TimescaleDB, Redis, Elasticsearch",
+      items: "Go, Gin, Laravel, GORM, REST APIs, MQTT, PostgreSQL, TimescaleDB, Redis, Elasticsearch",
     },
     {
       number: "03",
@@ -53,21 +54,33 @@ export const profile = {
     {
       number: "04",
       title: "Quality & Operations",
-      items: "Playwright, SonarQube, ELK, Linux, CI/CD, performance analysis, guarded migrations",
+      items: "Playwright, Vitest, PHPUnit, Postman, SonarQube, ELK, Linux, CI/CD, performance analysis, guarded migrations",
+    },
+    {
+      number: "05",
+      title: "AI / ML",
+      items: "Claude Code, LLM prompt workflows, OpenCV, YOLOv8",
     },
   ],
   experience: [
     {
-      period: "Jan 2026 — Now",
-      company: "FireExit Cooperation Co., Ltd.",
-      role: "Full Stack Software Developer",
+      period: "May 2026 — Now",
+      company: "Wealthy Prime Estate · Freelance",
+      role: "Full Stack Engineer",
       summary:
-        "Own the Laravel and React application for CIB Vision end to end—from ingestion and search to access control, testing, containers, and Kubernetes delivery.",
+        "Took a multilingual property-brokerage platform from requirements and architecture to production handover in about ten weeks, and continue to operate it on AWS for the client.",
     },
     {
-      period: "Oct 2024 — Dec 2025",
+      period: "Jan 2026 — Now",
       company: "FireExit Cooperation Co., Ltd.",
-      role: "Software Developer, Frontend",
+      role: "Full Stack Engineer",
+      summary:
+        "Own the Laravel and React application for CIB Vision end to end—from ingestion and search to access control, testing, containers, and Kubernetes delivery—and built the Bangkok Patana School heat-index monitoring system from kick-off to production in under four weeks.",
+    },
+    {
+      period: "Oct 2024 — Jan 2026",
+      company: "FireExit Cooperation Co., Ltd.",
+      role: "Frontend Developer",
       summary:
         "Built reusable React foundations and real-time interfaces for industrial IoT, network monitoring, telemetry, vehicle tracking, utilities, and enterprise scheduling.",
     },
@@ -105,6 +118,17 @@ export const profile = {
     },
     {
       number: "03",
+      title: "Bangkok Patana School",
+      type: "IoT heat-index monitoring",
+      summary:
+        "Live heat-risk monitoring for a school campus: LoRaWAN sensors stream over MQTT into Laravel and TimescaleDB, and a Go WebSocket relay pushes each reading to a React dashboard.",
+      metric: "Kick-off to production in under 4 weeks",
+      technologies: "Laravel · React 19 · TimescaleDB · MQTT · Go",
+      color: "amber",
+      status: "Private production system",
+    },
+    {
+      number: "04",
       title: "Search at production scale",
       type: "Performance engineering",
       summary:
@@ -115,7 +139,7 @@ export const profile = {
       status: "Production performance case",
     },
     {
-      number: "04",
+      number: "05",
       title: "SaaS Task Management",
       type: "Open-source architecture build",
       summary:
@@ -134,8 +158,9 @@ export const profile = {
     score: "CMU E-Graduate: 78/100",
   },
   certifications: [
-    "Full-Stack Development — LinkedIn Learning",
-    "Cloud Security & Cybersecurity Essentials — Cisco",
+    "Cybersecurity Essentials — Cisco Networking Academy",
+    "CCSK v4.1 Foundation Training — Cloud Security Alliance",
+    "Full-Stack Web Development — LinkedIn Learning",
   ],
   languages: ["Thai — Native", "English — Upper-Intermediate (B2)"],
 };
